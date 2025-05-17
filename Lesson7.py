@@ -1,6 +1,6 @@
 import random
 min = 1
-max = 10
+max = 100
 random=random.randint(min,max)
 print('=====遊戲開始=====\n')
 while True:
@@ -10,6 +10,6 @@ while True:
    break
   elif( input_number < random):
    print(f"{input_number}~{random}")
-  else:
-   print("猜錯了，再大一點")
+  elif( input_number > random):
+   print(f"{random}~{input_number}")
 print("See You Next Time")
